@@ -1,0 +1,41 @@
+:root {
+  /* Colours */
+  --bg: #0e1030;
+  --surface: #151842;
+  --surface-alt: #121437;
+  --text: #eef0ff;
+  --text-2: #c9cdeb;
+  --muted: #a9afd6;
+  --cyan: #7fe3f0;
+  --accent: #ffb03a;
+  --on-accent: #1a1206;
+  --flame-core: #fff1c9;
+  --diya-rim: #ffd27a;
+  --wick: #3a2a12;
+
+  /* Borders (cyan at increasing strength) */
+  --line-1: rgba(127, 227, 240, 0.12);
+  --line-2: rgba(127, 227, 240, 0.18);
+  --line-3: rgba(127, 227, 240, 0.22);
+  --line-4: rgba(127, 227, 240, 0.3);
+  --line-5: rgba(127, 227, 240, 0.4);
+
+  /* Fonts */
+  --font-heading: 'Unbounded', sans-serif;
+  --font-body: 'Manrope', system-ui, sans-serif;
+  --font-hindi: 'Tiro Devanagari Hindi', serif;
+  --text-base: 17px;
+  --leading: 1.6;
+
+  /* Layout */
+  --container: 1280px;
+  --gutter: 32px;
+  --section-y: 96px;
+
+  /* Radii */
+  --radius-pill: 999px;
+  --radius-button: 14px;
+  --radius-card: 18px;
+  --radius-panel: 24px;
+  --radius-principal: 28px 28px 28px 4px;
+}

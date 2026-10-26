@@ -1,0 +1,25 @@
+# Local development only. Production does not use this file.
+# Step 1: postgres only. The api service is added in step 2, web in step 5.
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: school-postgres
+    restart: unless-stopped
+    environment:
+      # Local-only credentials. Real deployments get theirs from the hosting platform.
+      POSTGRES_USER: school
+      POSTGRES_PASSWORD: school
+      POSTGRES_DB: school_dev
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U school -d school_dev']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:

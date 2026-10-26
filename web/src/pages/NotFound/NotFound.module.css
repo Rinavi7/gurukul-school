@@ -1,0 +1,6 @@
+.back {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 24px var(--gutter) var(--section-y);
+  font-weight: 500;
+}

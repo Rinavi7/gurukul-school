@@ -1,0 +1,20 @@
+/* Matches the design's section headings (e.g. "The learning journey") */
+.header {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--section-y) var(--gutter) 0;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(30px, 3.4vw, 44px);
+  line-height: 1.15;
+}
+
+.intro {
+  margin: 16px 0 0;
+  max-width: 40em;
+  color: var(--text-2);
+}

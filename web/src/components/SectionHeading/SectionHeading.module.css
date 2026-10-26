@@ -1,0 +1,27 @@
+.heading {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.lg {
+  font-size: clamp(30px, 3.4vw, 44px);
+  line-height: 1.15;
+}
+
+/* No line-height here on purpose: the design lets these inherit the body's 1.6 */
+.md {
+  font-size: clamp(28px, 3vw, 38px);
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.link {
+  font-weight: 500;
+}

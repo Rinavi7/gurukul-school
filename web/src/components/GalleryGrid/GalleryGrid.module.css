@@ -1,0 +1,11 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.tall {
+  grid-row: span 2;
+}

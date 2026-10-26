@@ -1,0 +1,13 @@
+.column {
+  flex: 1 1 520px;
+  min-width: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

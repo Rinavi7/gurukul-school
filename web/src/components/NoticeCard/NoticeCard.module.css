@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.date {
+  flex: 0 0 64px;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 12px;
+  border: 1px solid var(--line-5);
+}
+
+.highlight {
+  border-color: var(--accent);
+}
+
+.day {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.month {
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.body {
+  min-width: 0;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+}

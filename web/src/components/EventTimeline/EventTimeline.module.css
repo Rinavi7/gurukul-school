@@ -1,0 +1,43 @@
+.timeline {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0 0 0 22px;
+  border-left: 1px dashed var(--line-5);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.item {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  left: -29px;
+  top: 6px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--cyan);
+}
+
+.next {
+  background: var(--accent);
+}
+
+.date {
+  color: var(--cyan);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.place {
+  color: var(--muted);
+  font-size: 15px;
+}

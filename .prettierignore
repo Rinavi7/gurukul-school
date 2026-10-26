@@ -1,0 +1,8 @@
+# Generated files
+package-lock.json
+dist/
+build/
+coverage/
+
+# The approved design stays byte-for-byte as delivered
+design/

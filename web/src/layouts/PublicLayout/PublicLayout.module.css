@@ -1,0 +1,5 @@
+/* overflow-x (not the design's overflow: hidden) so wide content scrolls the page instead of vanishing */
+.shell {
+  min-height: 100vh;
+  overflow-x: hidden;
+}

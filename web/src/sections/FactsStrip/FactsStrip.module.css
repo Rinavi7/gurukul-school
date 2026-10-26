@@ -1,0 +1,28 @@
+.strip {
+  position: relative;
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  border: 1px solid var(--line-3);
+  border-radius: 20px;
+}
+
+.fact {
+  padding: 22px 26px;
+  border-right: 1px solid var(--line-1);
+}
+
+.fact:last-child {
+  border-right: 0;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.value {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  margin-top: 4px;
+}

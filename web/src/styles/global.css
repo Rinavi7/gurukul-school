@@ -1,0 +1,38 @@
+/* No box-sizing reset on purpose: the design uses the browser default (content-box),
+   and every flex-basis and max-width in it assumes padding is added on top. */
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading);
+}
+
+/* :where() keeps specificity at zero, so any component class that sets a link colour
+   wins, even on hover. Matches the design, where inline-coloured links never turn white. */
+:where(a) {
+  color: var(--cyan);
+}
+
+:where(a:hover) {
+  color: #ffffff;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}

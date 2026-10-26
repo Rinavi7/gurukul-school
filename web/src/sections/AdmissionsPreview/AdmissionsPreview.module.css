@@ -1,0 +1,59 @@
+.band {
+  background: var(--surface-alt);
+  border-top: 1px solid var(--line-1);
+  border-bottom: 1px solid var(--line-1);
+}
+
+.inner {
+  padding-block: var(--section-y);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+
+.copy {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.intro {
+  margin: 18px 0 0;
+  max-width: 34em;
+  color: var(--text-2);
+}
+
+.steps {
+  margin: 36px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.number {
+  flex: 0 0 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepTitle {
+  font-weight: 700;
+}
+
+.stepText {
+  color: var(--muted);
+  font-size: 15px;
+}

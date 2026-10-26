@@ -1,0 +1,6 @@
+{
+  "name": "@gurukul/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gurukul School API: Express + Sequelize + PostgreSQL (filled in at step 6)"
+}

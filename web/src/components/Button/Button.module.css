@@ -1,0 +1,45 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.primary,
+.secondary {
+  min-height: 52px;
+  padding: 0 28px;
+  border-radius: var(--radius-button);
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 700;
+}
+
+.secondary {
+  border: 1px solid rgba(238, 240, 255, 0.35);
+  color: var(--text);
+  font-weight: 500;
+}
+
+.pill,
+.pillOutline {
+  min-height: 44px;
+  border-radius: var(--radius-pill);
+  font-size: 15px;
+}
+
+.pill {
+  padding: 0 20px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 700;
+}
+
+.pillOutline {
+  padding: 0 18px;
+  border: 1px solid var(--line-5);
+  color: var(--text);
+  font-weight: 500;
+}

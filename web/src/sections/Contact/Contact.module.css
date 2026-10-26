@@ -1,0 +1,41 @@
+/* The design's footer padding-top; the bottom bar lives in components/Footer */
+.section {
+  padding-top: var(--section-y);
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.details {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.address {
+  font-style: normal;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: var(--text-2);
+}
+
+.map {
+  flex: 2 1 480px;
+  min-width: 0;
+  min-height: 280px;
+  border-radius: var(--radius-panel);
+  border: 1px solid var(--line-3);
+  background:
+    radial-gradient(circle at 60% 50%, rgba(127, 227, 240, 0.12) 0 4px, transparent 5px) 0 0 / 28px
+      28px,
+    var(--surface-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 15px;
+}

@@ -1,0 +1,89 @@
+.header {
+  border-bottom: 1px solid var(--line-2);
+}
+
+.nav {
+  padding-block: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.brandName {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 0.01em;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 22px;
+  font-size: 15px;
+}
+
+.link {
+  color: var(--text-2);
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.active {
+  color: var(--cyan);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.menuButton {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--line-5);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Below 860px the links and buttons fold into the menu button */
+@media (max-width: 860px) {
+  .menuButton {
+    display: inline-flex;
+  }
+
+  .links,
+  .actions {
+    display: none;
+    flex-basis: 100%;
+  }
+
+  .open .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .open .actions {
+    display: flex;
+    padding-bottom: 8px;
+  }
+}

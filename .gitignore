@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Env files: real secrets never get committed, only the .example templates
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
