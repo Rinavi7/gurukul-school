@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom';
 import PlaceholderImage from '../../components/PlaceholderImage/PlaceholderImage.jsx';
 import SectionHeading from '../../components/SectionHeading/SectionHeading.jsx';
+import { principal } from '../../data/principal.js';
 import styles from './About.module.css';
 
-export default function About() {
+// headingAs="h1" when this section is the top of the About page rather than part of Home.
+export default function About({ headingAs = 'h2' }) {
   return (
     <section id="about" className={`container ${styles.section}`}>
       <div className={styles.layout}>
         <div className={styles.copy}>
-          <SectionHeading title="An old idea of learning, renewed" />
+          <SectionHeading title="An old idea of learning, renewed" as={headingAs} />
           <p className={styles.intro}>
             In a gurukul, students learned by living close to their teachers, asking questions and
             working with their hands. We keep that closeness: small classes, mentors who know every
@@ -34,14 +36,12 @@ export default function About() {
           <div className={styles.person}>
             <PlaceholderImage label="Photo" variant="avatar" />
             <div>
-              <div className={styles.name}>[Principal&apos;s name]</div>
-              <div className={styles.role}>Principal</div>
+              <div className={styles.name}>{principal.name}</div>
+              <div className={styles.role}>{principal.role}</div>
             </div>
           </div>
-          <blockquote className={styles.quote}>
-            “[A short message from the principal to parents and students, two or three lines long.]”
-          </blockquote>
-          <Link to="/about" className={styles.more}>
+          <blockquote className={styles.quote}>“{principal.quote}”</blockquote>
+          <Link to="/about#principal" className={styles.more}>
             Read the full message
           </Link>
         </figure>

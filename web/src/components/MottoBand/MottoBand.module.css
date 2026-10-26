@@ -1,6 +1,7 @@
+/* No outer margin: spacing comes from the layout above and each page's first section below */
 .band {
   position: relative;
-  margin: 0 0 72px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;

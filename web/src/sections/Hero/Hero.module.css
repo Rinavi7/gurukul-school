@@ -1,6 +1,7 @@
+/* 72px top = the design's gap below the गुरुकुल band, which now lives in PublicLayout */
 .hero {
   position: relative;
-  padding-block: 56px;
+  padding: 72px var(--gutter) 56px;
 }
 
 .row {

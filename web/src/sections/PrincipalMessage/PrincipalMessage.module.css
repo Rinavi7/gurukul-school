@@ -1,0 +1,52 @@
+/* Same card language as the principal figure in sections/About */
+.section {
+  padding-bottom: var(--section-y);
+}
+
+.card {
+  max-width: 48em;
+  padding: 32px;
+  border: 1px solid var(--line-3);
+  border-radius: var(--radius-principal);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.role {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.body {
+  color: var(--text-2);
+}
+
+.body p {
+  margin: 0 0 16px;
+}
+
+.body p:last-child {
+  margin-bottom: 0;
+}
+
+.greeting {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.signature {
+  padding-top: 20px;
+  border-top: 1px solid var(--line-1);
+  color: var(--text-2);
+}

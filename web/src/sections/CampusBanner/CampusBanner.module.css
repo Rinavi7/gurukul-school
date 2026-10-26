@@ -1,0 +1,18 @@
+/* 72px top matches the gap below the गुरुकुल band on Home */
+.section {
+  padding-top: 72px;
+}
+
+/* Capped at 860px: the current image is only 645px wide and blurs if stretched further */
+.figure {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line-3);
+  border-radius: var(--radius-panel);
+}

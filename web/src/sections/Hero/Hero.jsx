@@ -1,5 +1,4 @@
 import Button from '../../components/Button/Button.jsx';
-import MottoBand from '../../components/MottoBand/MottoBand.jsx';
 import OrbitGraphic from '../../components/OrbitGraphic/OrbitGraphic.jsx';
 import FactsStrip from '../FactsStrip/FactsStrip.jsx';
 import styles from './Hero.module.css';
@@ -7,8 +6,6 @@ import styles from './Hero.module.css';
 export default function Hero() {
   return (
     <section className={`container ${styles.hero}`}>
-      <MottoBand />
-
       <div className={styles.row}>
         <div className={styles.copy}>
           <p className={styles.eyebrow}>A school where every child finds their orbit</p>

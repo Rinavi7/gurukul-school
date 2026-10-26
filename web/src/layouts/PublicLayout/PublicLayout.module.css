@@ -3,3 +3,8 @@
   min-height: 100vh;
   overflow-x: hidden;
 }
+
+/* The design's 56px gap between the navbar and the गुरुकुल band */
+.motto {
+  padding-top: 56px;
+}
