@@ -3,6 +3,10 @@
 {
   "name": "gurukul-school",
   "compatibility_date": "2026-10-01",
+  // Wrangler runs this before every deploy, so web/dist always exists
+  "build": {
+    "command": "npm run build -w web"
+  },
   "assets": {
     "directory": "./web/dist",
     // Send unknown paths like /about to index.html so React Router can handle them
