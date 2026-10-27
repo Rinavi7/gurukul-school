@@ -1,0 +1,11 @@
+// Cloudflare hosting config. Only the built React site (web/dist) is uploaded;
+// the api workspace will be hosted separately once it exists.
+{
+  "name": "gurukul-school",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./web/dist",
+    // Send unknown paths like /about to index.html so React Router can handle them
+    "not_found_handling": "single-page-application"
+  }
+}
